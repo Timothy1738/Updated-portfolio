@@ -14,6 +14,12 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./Images/logo.png">
 
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-share.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-rotate.min.css" /> 
+
     <style>
         /* Styles for pagination bullets */
         .swiper-pagination-bullet {
@@ -160,9 +166,9 @@
                         soluta consequatur, quaerat tenetur, perferendis eum repellendus ex incidunt. Doloribus nesciunt
                         nostrum cum, totam ipsam quae quia iste soluta voluptate. Aliquam, expedita
                     </p>
-                    
+
                     <button class="btn btn-primary open-modal-btn" onclick="openModal()">More Info <iconify-icon
-                        icon="famicons:chevron-forward" width="24" height="24"></button>
+                            icon="famicons:chevron-forward" width="24" height="24"></button>
                 </div>
             </div>
         </div>
@@ -173,57 +179,118 @@
     <div class="modal" id="myModal">
         <div class="modal-content">
             <div class="modal-header">
-                <button class="close-btn" onclick="closeModal()">Close</button>
+                <button class="close-btn" onclick="closeModal()"><iconify-icon icon="carbon:close-outline" width="48"
+                        height="48"></iconify-icon></button>
             </div>
+
             <div class="modal-body">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Hotel Protocol</h3>
+
+                <p class="title center">WORK EXPERIENCE</p>
+                <p class="subtitle center semi_bold" style="margin-bottom: 3rem;">The Journey That Shaped <br> My Skills
+                </p>
+
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="content institution flex_end">
+                            <div class="bantu_title">Hotel Protocol</div>
                             <span>July 2024 - Up to Date</span>
-                            <p>Description of my role at Hotel Protocol. The roles I held and what made me stand out.
+                        </div>
+                        <div class="content award">
+                            <div class="bantu_title">IT Officer</div>
+                            <p class="desc">Description of my role at hotel protocol.
+                                The roles i held and what made me stand out</p>
+                        </div>
+                    </li>
+                    <!-- one down -->
+
+                    <li class="timeline-item">
+                        <div class="content award">
+                            <div class="bantu_title">Internship Training Program</div>
+                            <p class="desc">
+                                Description of my role at hotel protocol. The roles i held and what made me stand out
                             </p>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>IT Officer</h3>
-                            <span>July 2024 - Up to Date</span>
-                            <p>Description of my role at Hotel Protocol. The roles I held and what made me stand out.
-                            </p>
+                        <div class="content institution">
+                            <div class="bantu_title">Gomo Technologies</div>
+                            <span>July 2024 - Up-to Date</span>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Internship Training Program</h3>
-                            <span>July 2024 - Up to Date</span>
-                            <p>Description of my role at Hotel Protocol. The roles I held and what made me stand out.
-                            </p>
+                    </li>
+                    <!-- second item down -->
+
+                    <li class="timeline-item">
+                        <div class="content institution flex_end">
+                            <div class="bantu_title">Kakebe Technologies</div>
+                            <span> July 2024 - Up-to Date</span>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Gomo Technologies</h3>
-                            <span>July 2024 - Up to Date</span>
-                            <p>Description of my role at Hotel Protocol. The roles I held and what made me stand out.
-                            </p>
+                        <div class="content award">
+                            <div class="bantu_title">Internship Training Program</div>
+                            <p class="desc">Description of my role at institution. The roles I held and what made me
+                                stand out.</p>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Kakebe Technologies</h3>
-                            <span>July 2024 - Up to Date</span>
-                            <p>Description of my role at Hotel Protocol. The roles I held and what made me stand out.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Internship Training Program</h3>
-                            <span>July 2024 - Up to Date</span>
-                            <p>Description of my role at Hotel Protocol. The roles I held and what made me stand out.
-                            </p>
-                        </div>
+                    </li>
+                    <!-- last 1 dho -->
+                </ul>
+
+                <a href="mailto:anganya1738@gmail.com" class="btn btn-primary tag-a">Ready To Work With Me?</a>
+
+                <div class="gallery">
+                    <p class="title center">GALLERY</p>
+                    <p class="subtitle center semi_bold">Highlights of My Work <br> Spaces</p>
+
+                    <div class="gallery_grid" id="lightgallery">
+                        <a href="./Images/testimonials/team-1.jpg" class="image" data-category="Hotel View">
+                            <div class="magnify">
+                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
+                                    height="24"></iconify-icon>
+                            </div>
+                            <img src="./Images/testimonials/team-1.jpg" alt="Main Building">
+                        </a>
+                        <!-- end of image -->
+
+                        <a href="./Images/testimonials/team-2.jpg" class="image" data-category="Hotel View">
+                            <div class="magnify">
+                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
+                                    height="24"></iconify-icon>
+                            </div>
+                            <img src="./Images/testimonials/team-2.jpg" alt="Main Building">
+                        </a>
+                        <!-- end of image -->
+
+                        <a href="./Images/testimonials/team-3.jpg" class="image" data-category="Hotel View">
+                            <div class="magnify">
+                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
+                                    height="24"></iconify-icon>
+                            </div>
+                            <img src="./Images/testimonials/team-3.jpg" alt="Main Building">
+                        </a>
+                        <!-- end of image -->
+
+                        <a href="./Images/testimonials/team-4.jpg" class="image" data-category="Hotel View">
+                            <div class="magnify">
+                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
+                                    height="24"></iconify-icon>
+                            </div>
+                            <img src="./Images/testimonials/team-4.jpg" alt="Main Building">
+                        </a>
+                        <!-- end of image -->
+
+                        <a href="./Images/testimonials/team-5.jpg" class="image" data-category="Hotel View">
+                            <div class="magnify">
+                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
+                                    height="24"></iconify-icon>
+                            </div>
+                            <img src="./Images/testimonials/team-5.jpg" alt="Main Building">
+                        </a>
+                        <!-- end of image -->
+
+                        <a href="./Images/testimonials/team-6.jpg" class="image" data-category="Hotel View">
+                            <div class="magnify">
+                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
+                                    height="24"></iconify-icon>
+                            </div>
+                            <img src="./Images/testimonials/team-6.jpg" alt="Main Building">
+                        </a>
+                        <!-- end of image -->
                     </div>
                 </div>
             </div>
@@ -792,6 +859,24 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+        });
+    </script>
+
+    <!-- LightGallery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/share/lg-share.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/rotate/lg-rotate.min.js"></script>
+
+    <script>
+        // Initialize LightGallery
+        lightGallery(document.getElementById('lightgallery'), {
+            selector: 'a', // Activates LightGallery for links
+            plugins: [lgZoom, lgShare, lgRotate], // Include the plugins you need
+            download: true, // Enable download button
+            share: true, // Enable sharing
+            rotate: true, // Enable rotation controls
+            zoom: true, // Enable zooming
         });
     </script>
 
