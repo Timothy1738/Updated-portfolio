@@ -1,915 +1,1317 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tim Developer</title>
 
     <!-- document css -->
-    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/css.css" />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./Images/logo.png">
+    <link rel="icon" type="image/x-icon" href="./Images/logo.png" />
 
     <!-- LightGallery CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-share.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-rotate.min.css" /> 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-share.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-rotate.min.css"
+    />
 
     <style>
-        /* Styles for pagination bullets */
-        .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
-            margin: 0 5px;
-            background-color: #aaa;
-            border-radius: 50%;
-            cursor: pointer;
-            opacity: 0.7;
-            transition: background-color 0.3s ease;
-        }
+      /* Styles for pagination bullets */
+      .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+        background-color: #aaa;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: background-color 0.3s ease;
+      }
 
-        /* Active slide style */
-        .swiper-pagination-bullet-active {
-            background-color: var(--color-primary);
-            width: 17px;
-            height: 17px;
-        }
+      /* Active slide style */
+      .swiper-pagination-bullet-active {
+        background-color: var(--color-primary);
+        width: 17px;
+        height: 17px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- ===navbar start=== -->
     <nav>
-        <div class="container">
-            <div class="logo">
-                <img src="./Images/logo.png" alt="Logo">
-            </div>
-
-            <div class="nav_links" id="navLinks">
-                <a class="active" href="#home">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#services">Services</a>
-                <a href="#projects">Projects</a>
-                <a href="#testimony">Testimonials</a>
-                <a href="#contact">Contact Me</a>
-            </div>
-
-            <a href="#about" class="getstarted">Get Started</a>
-            <div class="menuBtn" id="menuBtn">
-                <iconify-icon icon="pepicons-pop:menu" width="35" height="35"></iconify-icon>
-            </div>
+      <div class="container">
+        <div class="logo">
+          <img src="./Images/logo.png" alt="Logo" />
         </div>
+
+        <div class="nav_links" id="navLinks">
+          <a class="active" href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#testimony">Testimonials</a>
+          <a href="#contact">Contact Me</a>
+        </div>
+
+        <a href="#about" class="getstarted">Get Started</a>
+        <div class="menuBtn" id="menuBtn">
+          <iconify-icon
+            icon="pepicons-pop:menu"
+            width="35"
+            height="35"
+          ></iconify-icon>
+        </div>
+      </div>
     </nav>
     <!-- ===navbar end=== -->
 
     <!-- ===Hero Section=== -->
     <section id="home">
-        <div class="hero_text">
-            <p class="hello">HELLO, I'M</p>
-            <h1>ANGANYA <br> TIMOTHY</h1>
-            <p class="span"> I'm a <span>Web Developer</span></p>
-            <p class="intro">A passionate web developer based in Lira, Uganda, dedicated to
-                empowering businesses with impactful online presence. I specialize
-                in crafting exceptional websites tailored for growth, connecting
-                you with your clientele and partners effectively.</p>
-            <div class="hero_btns">
-                <a href="#projects" class="btn btn-primary">See My Work</a>
-                <a href="#contact" class="btn btn-secondary">Let's Collaborate</a>
-            </div>
+      <div class="hero_text">
+        <p class="hello">HELLO, I'M</p>
+        <h1>
+          ANGANYA <br />
+          TIMOTHY
+        </h1>
+        <p class="span">I'm a <span>Web Developer</span></p>
+        <p class="intro">
+          A passionate web developer based in Lira, Uganda, dedicated to
+          empowering businesses with impactful online presence. I specialize in
+          crafting exceptional websites tailored for growth, connecting you with
+          your clientele and partners effectively.
+        </p>
+        <div class="hero_btns">
+          <a href="#projects" class="btn btn-primary">See My Work</a>
+          <a href="#contact" class="btn btn-secondary">Let's Collaborate</a>
         </div>
-        <div class="hero_image">
-            <img src="./Images/hero-img-bg.jpg" alt="Hero Image">
-        </div>
+      </div>
+      <div class="hero_image">
+        <img src="./Images/hero-img-bg.jpg" alt="Hero Image" />
+      </div>
     </section>
     <!-- ===Hero Section End=== -->
 
     <!-- ====about me section=== -->
     <section id="about" class="section">
-        <div class="container">
-            <p class="title center">SKILLS</p>
-            <p class="subtitle semi_bold center">Explore My Development andDesign Skills</p>
-            <div class="content_body">
-                <p class="center">I specialize in creating dynamic and responsive web applications. My expertise
-                    includes 
-                    frontend technologies like HTML, CSS, and JavaScript, along with backend development using 
-                    PHP.</p>
-            </div>
-
-            <div class="main_skill_cards">
-                <div class="skill_card card_hover">
-                    <iconify-icon class="iconify" icon="mingcute:monitor-line" width="48" height="48"></iconify-icon>
-                    <p class="card_title semi_bold center">Frontend Development Expertise</p>
-                    <p class="skill_desc center">
-                        I craft seamless user experiences with HTML, CSS, and  JavaScript.
-                    </p>
-                </div>
-                <!-- end of skill card -->
-
-                <div class="skill_card card_hover">
-                    <iconify-icon class="iconify" icon="mdi:server" width="48" height="48"></iconify-icon>
-                    <p class="card_title semi_bold center">Backend Development Proficiency</p>
-                    <p class="skill_desc center">
-                        I build robust server-side applications using PHP.
-                    </p>
-                </div>
-                <!-- end of skill card -->
-
-                <div class="skill_card card_hover">
-                    <iconify-icon class="iconify" icon="akar-icons:figma-fill" width="48" height="48"></iconify-icon>
-                    <p class="card_title semi_bold center">Design Skills with Figma</p>
-                    <p class="skill_desc center">
-                        I create visually appealing designs using Figma.
-                    </p>
-                </div>
-                <!-- end of skill card -->
-
-                <div class="skill_card card_hover">
-                    <iconify-icon class="iconify" icon="simple-icons:canva" width="48" height="48"></iconify-icon>
-                    <p class="card_title semi_bold center">Graphics Design with Canva</p>
-                    <p class="skill_desc center">
-                        As a part time activity, i take on any graphics challenge with Canva.
-                    </p>
-                </div>
-                <!-- end of skill card -->
-            </div>
+      <div class="container">
+        <p class="title center">SKILLS</p>
+        <p class="subtitle semi_bold center">
+          Explore My Development andDesign Skills
+        </p>
+        <div class="content_body">
+          <p class="center">
+            I specialize in creating dynamic and responsive web applications. My
+            expertise includes frontend technologies like HTML, CSS, and
+            JavaScript, along with backend development using PHP.
+          </p>
         </div>
+
+        <div class="main_skill_cards">
+          <div class="skill_card card_hover">
+            <iconify-icon
+              class="iconify"
+              icon="mingcute:monitor-line"
+              width="48"
+              height="48"
+            ></iconify-icon>
+            <p class="card_title semi_bold center">
+              Frontend Development Expertise
+            </p>
+            <p class="skill_desc center">
+              I craft seamless user experiences with HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <!-- end of skill card -->
+
+          <div class="skill_card card_hover">
+            <iconify-icon
+              class="iconify"
+              icon="mdi:server"
+              width="48"
+              height="48"
+            ></iconify-icon>
+            <p class="card_title semi_bold center">
+              Backend Development Proficiency
+            </p>
+            <p class="skill_desc center">
+              I build robust server-side applications using PHP.
+            </p>
+          </div>
+          <!-- end of skill card -->
+
+          <div class="skill_card card_hover">
+            <iconify-icon
+              class="iconify"
+              icon="akar-icons:figma-fill"
+              width="48"
+              height="48"
+            ></iconify-icon>
+            <p class="card_title semi_bold center">Design Skills with Figma</p>
+            <p class="skill_desc center">
+              I create visually appealing designs using Figma.
+            </p>
+          </div>
+          <!-- end of skill card -->
+
+          <div class="skill_card card_hover">
+            <iconify-icon
+              class="iconify"
+              icon="simple-icons:canva"
+              width="48"
+              height="48"
+            ></iconify-icon>
+            <p class="card_title semi_bold center">
+              Graphics Design with Canva
+            </p>
+            <p class="skill_desc center">
+              As a part time activity, i take on any graphics challenge with
+              Canva.
+            </p>
+          </div>
+          <!-- end of skill card -->
+        </div>
+      </div>
     </section>
 
     <section class="special_section">
-        <div class="container about_content">
-            <div class="about_image">
-                <img src="./Images/Hero-img.png" alt="">
-            </div>
-
-            <div class="about_text">
-                <p class="title">ABOUT ME</p>
-                <p class="subtitle semi_bold">
-                    Crafting Innovative Web  Solutions for You
-                </p>
-                <div class="text_content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum
-                        eaque delectus voluptas, perferendis, deleniti ut eveniet, enim maxime
-                        praesentium suscipit rem neque! Similique, accusamus at voluptates
-                        tempora voluptate voluptatibus temporibus. Et accusamus ratione fugit hic
-                        voluptate unde perferendis quaerat incidunt tenetur delectus reiciendis
-                        exercitationem atque laudantium accusantium quo, est nulla praesentium?</p>
-
-                    <p>
-                        Minima recusandae, accusamus eligendi ullam iure, animi ipsam culpa est modi amet magni labore a
-                        dolore! Repellendus eius explicabo dolores libero consequatur. Eligendi tempore amet accusantium
-                        soluta consequatur, quaerat tenetur, perferendis eum repellendus ex incidunt. Doloribus nesciunt
-                        nostrum cum, totam ipsam quae quia iste soluta voluptate. Aliquam, expedita
-                    </p>
-
-                    <button class="btn btn-primary open-modal-btn" onclick="openModal()">More Info <iconify-icon
-                            icon="famicons:chevron-forward" width="24" height="24"></button>
-                </div>
-            </div>
+      <div class="container about_content">
+        <div class="about_image">
+          <img src="./Images/Hero-img.png" alt="" />
         </div>
+
+        <div class="about_text">
+          <p class="title">ABOUT ME</p>
+          <p class="subtitle semi_bold">
+            Crafting Innovative Web Solutions for You
+          </p>
+          <div class="text_content">
+            <p>
+              Hello there, my name is Anganya Timothy, and I am an IT
+              professional passionate about web development and creative
+              problem‑solving. With a degree in Information and Communication
+              Technology from Gulu University and hands‑on experience in
+              building websites, managing IT systems, and exploring emerging
+              tools, I enjoy turning ideas into practical, user‑friendly
+              solutions that make technology more impactful.
+            </p>
+
+            <p>
+              I am always eager to learn new skills, take on challenges, and
+              approach problems with creativity. Whether designing responsive
+              layouts, optimizing systems, or collaborating with teams, I thrive
+              on innovation and adaptability. For me, technology is about more
+              than solving tasks—it’s about creating experiences that inspire
+              growth and transformation.
+            </p>
+
+            <button
+              class="btn btn-primary open-modal-btn"
+              onclick="openModal()"
+            >
+              More Info
+              <iconify-icon
+                icon="famicons:chevron-forward"
+                width="24"
+                height="24"
+              ></iconify-icon>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ====end about me section=== -->
 
     <!-- ===modal section==== -->
     <div class="modal" id="myModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="close-btn" onclick="closeModal()"><iconify-icon icon="carbon:close-outline" width="48"
-                        height="48"></iconify-icon></button>
-            </div>
-
-            <div class="modal-body">
-
-                <p class="title center">WORK EXPERIENCE</p>
-                <p class="subtitle center semi_bold" style="margin-bottom: 3rem;">The Journey That Shaped My Skills
-                </p>
-
-                <ul class="timeline">
-                    <li class="timeline-item">
-                        <div class="content institution flex_end">
-                            <div class="bantu_title">Hotel Protocol</div>
-                            <span>July 2024 - Up to Date</span>
-                        </div>
-                        <div class="content award">
-                            <div class="bantu_title">IT Officer</div>
-                            <p class="desc">Description of my role at hotel protocol.
-                                The roles i held and what made me stand out</p>
-                        </div>
-                    </li>
-                    <!-- one down -->
-
-                    <li class="timeline-item">
-                        <div class="content award">
-                            <div class="bantu_title">Internship Training Program</div>
-                            <p class="desc">
-                                Description of my role at hotel protocol. The roles i held and what made me stand out
-                            </p>
-                        </div>
-                        <div class="content institution">
-                            <div class="bantu_title">Gomo Technologies</div>
-                            <span>July 2024 - Up-to Date</span>
-                        </div>
-                    </li>
-                    <!-- second item down -->
-
-                    <li class="timeline-item">
-                        <div class="content institution flex_end">
-                            <div class="bantu_title">Kakebe Technologies</div>
-                            <span> July 2024 - Up-to Date</span>
-                        </div>
-                        <div class="content award">
-                            <div class="bantu_title">Internship Training Program</div>
-                            <p class="desc">Description of my role at institution. The roles I held and what made me
-                                stand out.</p>
-                        </div>
-                    </li>
-                    <!-- last 1 dho -->
-                </ul>
-
-                <div class="workflow">
-                    <div class="workflow-item">
-                        <div class="workflow-content">
-                            <div class="top_workflow">
-                                <div class="h2">Hotel Protocol</div>
-                                <span>July 2024 - Up to Date</span>
-                            </div>
-                            <div class="bottom_workflow">
-                                <div class="h3">IT Officer</div>
-                                <p>This is the content for the first event.</p>
-                            </div>
-                        </div>
-                        <div class="workflow-marker"></div>
-                    </div>
-                    <!-- end of workflow item -->
-
-                    <div class="workflow-item">
-                        <div class="workflow-content">
-                            <div class="top_workflow">
-                                <div class="h2">Hotel Protocol</div>
-                                <span>July 2024 - Up to Date</span>
-                            </div>
-                            <div class="bottom_workflow">
-                                <div class="h3">IT Officer</div>
-                                <p>This is the content for the first event.</p>
-                            </div>
-                        </div>
-                        <div class="workflow-marker"></div>
-                    </div>
-                    <!-- end of workflow item -->
-
-                    <div class="workflow-item">
-                        <div class="workflow-content">
-                            <div class="top_workflow">
-                                <div class="h2">Hotel Protocol</div>
-                                <span>July 2024 - Up to Date</span>
-                            </div>
-                            <div class="bottom_workflow">
-                                <div class="h3">IT Officer</div>
-                                <p>This is the content for the first event.</p>
-                            </div>
-                        </div>
-                        <div class="workflow-marker"></div>
-                    </div>
-                    <!-- end of workflow item -->
-
-                    <div class="workflow-item">
-                        <div class="workflow-content">
-                            <div class="top_workflow">
-                                <div class="h2">Hotel Protocol</div>
-                                <span>July 2024 - Up to Date</span>
-                            </div>
-                            <div class="bottom_workflow">
-                                <div class="h3">IT Officer</div>
-                                <p>This is the content for the first event.</p>
-                            </div>
-                        </div>
-                        <div class="workflow-marker"></div>
-                    </div>
-                    <!-- end of workflow item -->
-
-                    <div class="workflow-item">
-                        <div class="workflow-content">
-                            <div class="top_workflow">
-                                <div class="h2">Hotel Protocol</div>
-                                <span>July 2024 - Up to Date</span>
-                            </div>
-                            <div class="bottom_workflow">
-                                <div class="h3">IT Officer</div>
-                                <p>This is the content for the first event.</p>
-                            </div>
-                        </div>
-                        <div class="workflow-marker"></div>
-                    </div>
-                    <!-- end of workflow item -->
-                </div>
-
-                <a href="mailto:anganyatimothy@gmail.com" class="btn btn-primary tag-a">Ready To Work With Me?</a>
-
-                <div class="gallery">
-                    <p class="title center">GALLERY</p>
-                    <p class="subtitle center semi_bold">Highlights of My Work  Spaces</p>
-
-                    <div class="gallery_grid" id="lightgallery">
-                        <a href="./Images/testimonials/team-1.jpg" class="image" data-category="Hotel View">
-                            <div class="magnify">
-                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
-                                    height="24"></iconify-icon>
-                            </div>
-                            <img src="./Images/testimonials/team-1.jpg" alt="Main Building">
-                        </a>
-                        <!-- end of image -->
-
-                        <a href="./Images/testimonials/team-2.jpg" class="image" data-category="Hotel View">
-                            <div class="magnify">
-                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
-                                    height="24"></iconify-icon>
-                            </div>
-                            <img src="./Images/testimonials/team-2.jpg" alt="Main Building">
-                        </a>
-                        <!-- end of image -->
-
-                        <a href="./Images/testimonials/team-3.jpg" class="image" data-category="Hotel View">
-                            <div class="magnify">
-                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
-                                    height="24"></iconify-icon>
-                            </div>
-                            <img src="./Images/testimonials/team-3.jpg" alt="Main Building">
-                        </a>
-                        <!-- end of image -->
-
-                        <a href="./Images/testimonials/team-4.jpg" class="image" data-category="Hotel View">
-                            <div class="magnify">
-                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
-                                    height="24"></iconify-icon>
-                            </div>
-                            <img src="./Images/testimonials/team-4.jpg" alt="Main Building">
-                        </a>
-                        <!-- end of image -->
-
-                        <a href="./Images/testimonials/team-5.jpg" class="image" data-category="Hotel View">
-                            <div class="magnify">
-                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
-                                    height="24"></iconify-icon>
-                            </div>
-                            <img src="./Images/testimonials/team-5.jpg" alt="Main Building">
-                        </a>
-                        <!-- end of image -->
-
-                        <a href="./Images/testimonials/team-6.jpg" class="image" data-category="Hotel View">
-                            <div class="magnify">
-                                <iconify-icon class="iconify" icon="mdi:magnify-plus-outline" width="24"
-                                    height="24"></iconify-icon>
-                            </div>
-                            <img src="./Images/testimonials/team-6.jpg" alt="Main Building">
-                        </a>
-                        <!-- end of image -->
-                    </div>
-                </div>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close-btn" onclick="closeModal()">
+            <iconify-icon
+              icon="carbon:close-outline"
+              width="48"
+              height="48"
+            ></iconify-icon>
+          </button>
         </div>
+
+        <div class="modal-body">
+          <p class="title center">WORK EXPERIENCE</p>
+          <p class="subtitle center semi_bold" style="margin-bottom: 3rem">
+            The Journey That Shaped My Skills
+          </p>
+
+          <ul class="timeline">
+            <li class="timeline-item">
+              <div class="content institution flex_end">
+                <div class="bantu_title">NIRA</div>
+                <span>April 2025 – February 2026</span>
+              </div>
+              <div class="content award">
+                <div class="bantu_title">Registration Assistant</div>
+                <p class="desc">
+                  As a Registration Assistant with NIRA, I captured and
+                  validated citizen biodata and biometrics, guided applicants
+                  through registration, ensured compliance with documentation
+                  requirements, safeguarded registration property, and submitted
+                  accurate daily reports. My role also involved verifying
+                  citizenship, flagging irregularities, sensitizing communities
+                  about NIRA services, and maintaining data integrity throughout
+                  the mass enrolment and renewal exercise.
+                </p>
+              </div>
+            </li>
+            <!-- one down -->
+
+            <li class="timeline-item">
+              <div class="content award">
+                <div class="bantu_title">IT Officer</div>
+                <p class="desc">
+                  At Hotel Protocol, I managed the hotel’s digital presence
+                  through social media and online marketing, developed and
+                  maintained the website and hotel management system, and
+                  ensured smooth IT operations by installing, repairing, and
+                  supporting computer equipment for staff. This role
+                  strengthened my skills in web development, IT infrastructure
+                  management, and providing responsive technical support in a
+                  fast‑paced environment.
+                </p>
+              </div>
+              <div class="content institution">
+                <div class="bantu_title">Hotel Protocol</div>
+                <span>December 2024 – April 2025</span>
+              </div>
+            </li>
+            <!-- second item down -->
+
+            <li class="timeline-item">
+              <div class="content institution flex_end">
+                <div class="bantu_title">Kakebe Technologies</div>
+                <span>June 2023 – August 2023</span>
+              </div>
+              <div class="content award">
+                <div class="bantu_title">Internship Training Program</div>
+                <p class="desc">
+                  At Kakebe Technologies, I collaborated with teams to analyze
+                  software and web development challenges, contributed to
+                  solutions, and explored emerging technologies like blockchain
+                  to streamline processes. I also engaged in workshops, prepared
+                  progress reports, and strengthened my skills through
+                  self‑learning, research, and hands‑on computer repair and
+                  maintenance.
+                </p>
+              </div>
+            </li>
+            <!-- last 1 dho -->
+          </ul>
+
+          <div class="workflow">
+            <div class="workflow-item">
+              <div class="workflow-content">
+                <div class="top_workflow">
+                  <div class="h2">NIRA</div>
+                  <span>April 2025 – February 2026</span>
+                </div>
+                <div class="bottom_workflow">
+                  <div class="h3">Registration Assistant</div>
+                  <p>
+                    As a Registration Assistant with NIRA, I captured and
+                    validated citizen biodata and biometrics, guided applicants
+                    through registration, ensured compliance with documentation
+                    requirements, safeguarded registration property, and
+                    submitted accurate daily reports. My role also involved
+                    verifying citizenship, flagging irregularities, sensitizing
+                    communities about NIRA services, and maintaining data
+                    integrity throughout the mass enrolment and renewal
+                    exercise.
+                  </p>
+                </div>
+              </div>
+              <div class="workflow-marker"></div>
+            </div>
+            <!-- end of workflow item -->
+
+            <div class="workflow-item">
+              <div class="workflow-content">
+                <div class="top_workflow">
+                  <div class="h2">Hotel Protocol</div>
+                  <span>December 2024 – April 2025</span>
+                </div>
+                <div class="bottom_workflow">
+                  <div class="h3">IT Officer</div>
+                  <p>
+                    At Hotel Protocol, I managed the hotel’s digital presence
+                    through social media and online marketing, developed and
+                    maintained the website and hotel management system, and
+                    ensured smooth IT operations by installing, repairing, and
+                    supporting computer equipment for staff. This role
+                    strengthened my skills in web development, IT infrastructure
+                    management, and providing responsive technical support in a
+                    fast‑paced environment.
+                  </p>
+                </div>
+              </div>
+              <div class="workflow-marker"></div>
+            </div>
+            <!-- end of workflow item -->
+
+            <div class="workflow-item">
+              <div class="workflow-content">
+                <div class="top_workflow">
+                  <div class="h2">Kakebe Technologies</div>
+                  <span>June 2023 – August 2023</span>
+                </div>
+                <div class="bottom_workflow">
+                  <div class="h3">Internship Training Program</div>
+                  <p>
+                    At Kakebe Technologies, I collaborated with teams to analyze
+                    software and web development challenges, contributed to
+                    solutions, and explored emerging technologies like
+                    blockchain to streamline processes. I also engaged in
+                    workshops, prepared progress reports, and strengthened my
+                    skills through self‑learning, research, and hands‑on
+                    computer repair and maintenance.
+                  </p>
+                </div>
+              </div>
+              <div class="workflow-marker"></div>
+            </div>
+            <!-- end of workflow item -->
+          </div>
+
+          <a
+            href="mailto:anganyatimothy@gmail.com"
+            class="btn btn-primary tag-a"
+            >Ready To Work With Me?</a
+          >
+
+          <div class="gallery">
+            <p class="title center">GALLERY</p>
+            <p class="subtitle center semi_bold">
+              Highlights of My Work Spaces
+            </p>
+
+            <div class="gallery_grid" id="lightgallery">
+              <a
+                href="./Images/nira_1.webp"
+                class="image"
+                data-category="Hotel View"
+              >
+                <div class="magnify">
+                  <iconify-icon
+                    class="iconify"
+                    icon="mdi:magnify-plus-outline"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </div>
+                <img
+                  src="./Images/nira_1.webp"
+                  alt="Biometric Capture of Clients on enrollment Kit"
+                />
+              </a>
+              <!-- end of image -->
+
+              <a
+                href="./Images/nira_2.webp"
+                class="image"
+                data-category="Hotel View"
+              >
+                <div class="magnify">
+                  <iconify-icon
+                    class="iconify"
+                    icon="mdi:magnify-plus-outline"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </div>
+                <img
+                  src="./Images/nira_2.webp"
+                  alt="Biometric Capture of Clients on enrollment Kit"
+                />
+              </a>
+              <!-- end of image -->
+
+              <a
+                href="./Images/nira_3.webp"
+                class="image"
+                data-category="Hotel View"
+              >
+                <div class="magnify">
+                  <iconify-icon
+                    class="iconify"
+                    icon="mdi:magnify-plus-outline"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </div>
+                <img
+                  src="./Images/nira_3.webp"
+                  alt="Biometric Capture of Clients on enrollment Kit"
+                />
+              </a>
+              <!-- end of image -->
+
+              <a
+                href="./Images/kakebe_1.jpg"
+                class="image"
+                data-category="Hotel View"
+              >
+                <div class="magnify">
+                  <iconify-icon
+                    class="iconify"
+                    icon="mdi:magnify-plus-outline"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </div>
+                <img
+                  src="./Images/kakebe_1.jpg"
+                  alt="Internship at Kakebe Technologies"
+                />
+              </a>
+              <!-- end of image -->
+
+              <a
+                href="./Images/kakebe_3.jpg"
+                class="image"
+                data-category="Hotel View"
+              >
+                <div class="magnify">
+                  <iconify-icon
+                    class="iconify"
+                    icon="mdi:magnify-plus-outline"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </div>
+                <img
+                  src="./Images/kakebe_3.jpg"
+                  alt="Internship at Kakebe Technologies"
+                />
+              </a>
+              <!-- end of image -->
+
+              <a
+                href="./Images/kakebe_4.jpg"
+                class="image"
+                data-category="Hotel View"
+              >
+                <div class="magnify">
+                  <iconify-icon
+                    class="iconify"
+                    icon="mdi:magnify-plus-outline"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </div>
+                <img
+                  src="./Images/kakebe_4.jpg"
+                  alt="Internship at Kakebe Technologies"
+                />
+              </a>
+              <!-- end of image -->
+
+              <a
+                href="./Images/kakebe_2.jpg"
+                class="image"
+                data-category="Hotel View"
+              >
+                <div class="magnify">
+                  <iconify-icon
+                    class="iconify"
+                    icon="mdi:magnify-plus-outline"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </div>
+                <img
+                  src="./Images/kakebe_2.jpg"
+                  alt="Internship at Kakebe Technologies - Blockchain Sentisation Seminar"
+                />
+              </a>
+              <!-- end of image -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- ====modal section end==== -->
 
     <!-- ===services section start=== -->
     <section class="section" id="services">
-        <div class="container">
-            <p class="title center">SERVICES</p>
-            <p class="subtitle center semi_bold">What I Offer: Tailored Solutions  for Your Business Needs</p>
+      <div class="container">
+        <p class="title center">SERVICES</p>
+        <p class="subtitle center semi_bold">
+          What I Offer: Tailored Solutions for Your Business Needs
+        </p>
 
-            <div class="content_body">
-                <div class="main_service_cards">
-                    <div class="service_card card_hover">
-                        <iconify-icon class="iconify" icon="fluent-mdl2:website" width="48" height="48"></iconify-icon>
-                        <p class="card_title semi_bold center">Website Development</p>
-                        <p class="service_desc center">Have a business or idea that needs a website?
-                            I’ve got you covered. I build and maintain
-                            excellent websites tailored to your needs all
-                            at flexible rates.</p>
-                    </div>
-                    <!-- end of card -->
-
-                    <div class="service_card card_hover">
-                        <iconify-icon class="iconify" icon="material-symbols:design-services-outline" width="48"
-                            height="48"></iconify-icon>
-                        <p class="card_title semi_bold center">UI/UX Design</p>
-                        <p class="service_desc center">
-                            A great design makes a great system. Using
-                            Figma, I craft user interfaces that visually
-                            represent your ideas, ensuring a seamless 
-                            and engaging user experience. A good
-                            impression is the first step to great work
-                        </p>
-                    </div>
-                    <!-- end of card -->
-                </div>
-
-                <div class="content_body">
-                    <p class="title underline">Other Services I Offer</p>
-                    <div class="other_services">
-                        <div class="other_cards card_hover">
-                            <iconify-icon class="iconify" icon="simple-icons:taichigraphics" width="48"
-                                height="48"></iconify-icon>
-                            <p class="card_title semi_bold">
-                                Graphics Design
-                            </p>
-                            <p class="other_desc">
-                                I bring your ideas to life with professional,
-                                eye catching designs that reflect your
-                                brand
-                            </p>
-                        </div>
-                        <!-- end of card -->
-
-                        <div class="other_cards card_hover">
-                            <iconify-icon class="iconify" icon="lsicon:computer-exclamation-filled" width="48"
-                                height="48"></iconify-icon>
-                            <p class="card_title semi_bold">Computer Maintenance & Repair</p>
-                            <p class="other_desc">I keep your devices running smoothly with
-                                reliable repair and maintenance to
-                                minimize downtime.</p>
-                        </div>
-                        <!-- end of card -->
-
-                        <div class="other_cards card_hover">
-                            <iconify-icon class="iconify" icon="nimbus:marketing" width="48" height="48"></iconify-icon>
-                            <p class="card_title semi_bold">Digital Marketing</p>
-                            <p class="other_desc">I help boost your online presence with
-                                tailored digital strategies for growth and
-                                engagement.</p>
-                        </div>
-                        <!-- end of card -->
-                    </div>
-                </div>
-
-                <div class="content_body">
-                    <a href="mailto:anganyatimothy@gmail.com" class="btn btn-primary">Hire Me <iconify-icon
-                            icon="famicons:chevron-forward" width="24" height="24"></iconify-icon></a>
-                </div>
+        <div class="content_body">
+          <div class="main_service_cards">
+            <div class="service_card card_hover">
+              <iconify-icon
+                class="iconify"
+                icon="fluent-mdl2:website"
+                width="48"
+                height="48"
+              ></iconify-icon>
+              <p class="card_title semi_bold center">Website Development</p>
+              <p class="service_desc center">
+                Have a business or idea that needs a website? I’ve got you
+                covered. I build and maintain excellent websites tailored to
+                your needs all at flexible rates.
+              </p>
             </div>
+            <!-- end of card -->
+
+            <div class="service_card card_hover">
+              <iconify-icon
+                class="iconify"
+                icon="material-symbols:design-services-outline"
+                width="48"
+                height="48"
+              ></iconify-icon>
+              <p class="card_title semi_bold center">UI/UX Design</p>
+              <p class="service_desc center">
+                A great design makes a great system. Using Figma, I craft user
+                interfaces that visually represent your ideas, ensuring a
+                seamless and engaging user experience. A good impression is the
+                first step to great work
+              </p>
+            </div>
+            <!-- end of card -->
+          </div>
+
+          <div class="content_body">
+            <p class="title underline">Other Services I Offer</p>
+            <div class="other_services">
+              <div class="other_cards card_hover">
+                <iconify-icon
+                  class="iconify"
+                  icon="simple-icons:taichigraphics"
+                  width="48"
+                  height="48"
+                ></iconify-icon>
+                <p class="card_title semi_bold">Graphics Design</p>
+                <p class="other_desc">
+                  I bring your ideas to life with professional, eye catching
+                  designs that reflect your brand
+                </p>
+              </div>
+              <!-- end of card -->
+
+              <div class="other_cards card_hover">
+                <iconify-icon
+                  class="iconify"
+                  icon="lsicon:computer-exclamation-filled"
+                  width="48"
+                  height="48"
+                ></iconify-icon>
+                <p class="card_title semi_bold">
+                  Computer Maintenance & Repair
+                </p>
+                <p class="other_desc">
+                  I keep your devices running smoothly with reliable repair and
+                  maintenance to minimize downtime.
+                </p>
+              </div>
+              <!-- end of card -->
+
+              <div class="other_cards card_hover">
+                <iconify-icon
+                  class="iconify"
+                  icon="nimbus:marketing"
+                  width="48"
+                  height="48"
+                ></iconify-icon>
+                <p class="card_title semi_bold">Digital Marketing</p>
+                <p class="other_desc">
+                  I help boost your online presence with tailored digital
+                  strategies for growth and engagement.
+                </p>
+              </div>
+              <!-- end of card -->
+            </div>
+          </div>
+
+          <div class="content_body">
+            <a href="mailto:anganyatimothy@gmail.com" class="btn btn-primary"
+              >Hire Me
+              <iconify-icon
+                icon="famicons:chevron-forward"
+                width="24"
+                height="24"
+              ></iconify-icon
+            ></a>
+          </div>
         </div>
+      </div>
     </section>
     <!-- ===end of services section=== -->
 
     <!-- ===portfolio start==== -->
     <section class="section" id="projects">
-        <div class="container">
-            <p class="title center">PORTFOLIO</p>
-            <p class="subtitle center semi_bold">Featured Projects</p>
-            <div class="projects_content">
-                <div class="project_column">
-                    <div class="project_card">
-                        <div class="website_img">
-                            <img src="./Images/Maranatha_cover.jpg" alt="">
-                        </div>
-                        <p class="card_title semi_bold">Hotel Protocol Website</p>
-                        <p class="project_desc">A fully responsive website built with HTML, CSS and JavaScript showing
-                            the magnificence and splendour of Hotel Protocol.</p>
+      <div class="container">
+        <p class="title center">PORTFOLIO</p>
+        <p class="subtitle center semi_bold">Featured Projects</p>
+        <div class="projects_content">
+          <div class="project_column">
+            <div class="project_card">
+              <div class="website_img">
+                <img src="./Images/hoteprotocol_cover.webp" alt="" />
+              </div>
+              <p class="card_title semi_bold">Hotel Protocol Website</p>
+              <p class="project_desc">
+                A fully responsive website built with HTML, CSS and JavaScript
+                showing the magnificence and splendour of Hotel Protocol.
+              </p>
 
-                        <a href="#" class="project_link">View Project <iconify-icon icon="famicons:chevron-forward"
-                                width="24" height="24"></iconify-icon></a>
-                    </div>
-                    <!-- end of card -->
-
-                    <div class="project_card">
-                        <div class="website_img">
-                            <img src="./Images/Maranatha_cover.jpg" alt="">
-                        </div>
-                        <p class="card_title semi_bold">Maranatha Technologies</p>
-                        <p class="project_desc">A personal project designed with HTML, CSS and JavaScript fully
-                            responsive and ready to be adapted for any real world applications
-                        </p>
-
-                        <a href="https://maranathatech.netlify.app/" target="_blank" class="project_link">View Project
-                            <iconify-icon icon="famicons:chevron-forward" width="24" height="24"></iconify-icon></a>
-                    </div>
-                    <!-- end of card -->
-
-                    <div class="project_card">
-                        <div class="figma_img">
-                            <img src="./Images/Figma/Hotel Protocol.jpg" alt="">
-                        </div>
-                        <p class="card_title semi_bold">Figma Project</p>
-                        <p class="project_desc">Hotel Protocol UI desktop design showing intricate details of the final
-                            project.</p>
-                        <a href="#" class="project_link">View Project <iconify-icon icon="famicons:chevron-forward"
-                                width="24" height="24"></iconify-icon></a>
-                    </div>
-                    <!-- end of card -->
-
-                    <div class="project_card">
-                        <div class="website_img">
-                            <img src="./Images/PineGardens_cover.jpg" alt="">
-                        </div>
-                        <p class="card_title semi_bold">Pine Gardens</p>
-                        <p class="project_desc">A Personal project, fully responsive, designed with HTML, CSS and
-                            JavaScript. Can be adopted suitably by hospitality serving entities.
-                        </p>
-                        <a href="https://pinegardens.netlify.app/" target="_blank" class="project_link">View Project
-                            <iconify-icon icon="famicons:chevron-forward" width="24" height="24"></iconify-icon></a>
-                    </div>
-                    <!-- end of card -->
-                </div>
-                <!-- end of column -->
-
-
-                <div class="project_column">
-                    <div class="project_card">
-                        <div class="figma_img">
-                            <img src="./Images/Figma/TalentVerse.jpg" alt="">
-                        </div>
-                        <p class="card_title semi_bold">Figma Project</p>
-                        <p class="project_desc">A UI design of my final year project at University showcasing it’s
-                            landing page.</p>
-                        <a href="#" class="project_link">View Project <iconify-icon icon="famicons:chevron-forward"
-                                width="24" height="24"></iconify-icon></a>
-                    </div>
-                    <!-- end of card -->
-
-                    <div class="project_card">
-                        <div class="website_img">
-                            <img src="./Images/Dobwale_cover.jpg" alt="">
-                        </div>
-                        <p class="card_title semi_bold">Portfolio Website</p>
-                        <p class="project_desc">A fully responsive website showcasing the client’s portfolio and
-                            services offered!
-                        </p>
-
-                        <a href="https://dobwale.netlify.app/" target="_blank" class="project_link">View Project
-                            <iconify-icon icon="famicons:chevron-forward" width="24" height="24"></iconify-icon></a>
-                    </div>
-                    <!-- end of card -->
-
-                    <div class="project_card">
-                        <div class="website_img">
-                            <img src="./Images/biplus_cover.jpg" alt="">
-                        </div>
-                        <p class="card_title semi_bold">Biplus Consult</p>
-                        <p class="project_desc">A company championing data driven technologies and their applications.
-                            A fully responsive website showcasing it’s services.
-                        </p>
-                        <a href="https://biplus.netlify.app/" target="_blank" class="project_link">View Project
-                            <iconify-icon icon="famicons:chevron-forward" width="24" height="24"></iconify-icon></a>
-                    </div>
-                    <!-- end of card -->
-
-                    <div class="project_card">
-                        <div class="figma_img">
-                            <img src="./Images/Figma/Pine Gardens.jpg" alt="">
-                        </div>
-                        <p class="card_title semi_bold">Pine Gardens Figma Project</p>
-                        <p class="project_desc">An intricate UI desktop design of project Pine Gardens showcasing it’s
-                            the plan of the project.</p>
-                        <a href="#" class="project_link">View Project <iconify-icon icon="famicons:chevron-forward"
-                                width="24" height="24"></iconify-icon></a>
-                    </div>
-                    <!-- end of card -->
-                </div>
-                <!-- end of column -->
-
+              <a
+                href="https://hotelprotocol.netlify.app/"
+                target="_blank"
+                class="project_link"
+                >View Project
+                <iconify-icon
+                  icon="famicons:chevron-forward"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
             </div>
+            <!-- end of card -->
+
+            <div class="project_card">
+              <div class="website_img">
+                <img src="./Images/Maranatha_cover.jpg" alt="" />
+              </div>
+              <p class="card_title semi_bold">Maranatha Technologies</p>
+              <p class="project_desc">
+                A personal project designed with HTML, CSS and JavaScript fully
+                responsive and ready to be adapted for any real world
+                applications
+              </p>
+
+              <a
+                href="https://maranathatech.netlify.app/"
+                target="_blank"
+                class="project_link"
+                >View Project
+                <iconify-icon
+                  icon="famicons:chevron-forward"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+            </div>
+            <!-- end of card -->
+
+            <div class="project_card">
+              <div class="figma_img">
+                <img src="./Images/Figma/Hotel Protocol.jpg" alt="" />
+              </div>
+              <p class="card_title semi_bold">Figma Project</p>
+              <p class="project_desc">
+                Hotel Protocol UI desktop design showing intricate details of
+                the final project.
+              </p>
+              <a
+                href="https://www.figma.com/design/eGoaLmbORueK05H3bYP1f9/Hotel-Alexcana?m=auto&t=2NomK4FwzK6VA31E-6"
+                target="_blank"
+                class="project_link"
+                >View Project
+                <iconify-icon
+                  icon="famicons:chevron-forward"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+            </div>
+            <!-- end of card -->
+
+            <div class="project_card">
+              <div class="website_img">
+                <img src="./Images/PineGardens_cover.jpg" alt="" />
+              </div>
+              <p class="card_title semi_bold">Pine Gardens</p>
+              <p class="project_desc">
+                A Personal project, fully responsive, designed with HTML, CSS
+                and JavaScript. Can be adopted suitably by hospitality serving
+                entities.
+              </p>
+              <a
+                href="https://pinegardens.netlify.app/"
+                target="_blank"
+                class="project_link"
+                >View Project
+                <iconify-icon
+                  icon="famicons:chevron-forward"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+            </div>
+            <!-- end of card -->
+          </div>
+          <!-- end of column -->
+
+          <div class="project_column">
+            <div class="project_card">
+              <div class="figma_img">
+                <img src="./Images/Figma/TalentVerse.jpg" alt="" />
+              </div>
+              <p class="card_title semi_bold">Figma Project</p>
+              <p class="project_desc">
+                A UI design of my final year project at University showcasing
+                it’s landing page.
+              </p>
+              <a
+                href="https://www.figma.com/design/9OPIH7eym9IupsDoq3jb2H/Talent-Exhibition-and-promotion-system?m=auto&t=2NomK4FwzK6VA31E-6"
+                target="_blank"
+                class="project_link"
+                >View Project
+                <iconify-icon
+                  icon="famicons:chevron-forward"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+            </div>
+            <!-- end of card -->
+
+            <div class="project_card">
+              <div class="website_img">
+                <img src="./Images/Dobwale_cover.jpg" alt="" />
+              </div>
+              <p class="card_title semi_bold">Portfolio Website</p>
+              <p class="project_desc">
+                A fully responsive website showcasing the client’s portfolio and
+                services offered!
+              </p>
+
+              <a
+                href="https://dobwale.netlify.app/"
+                target="_blank"
+                class="project_link"
+                >View Project
+                <iconify-icon
+                  icon="famicons:chevron-forward"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+            </div>
+            <!-- end of card -->
+
+            <div class="project_card">
+              <div class="website_img">
+                <img src="./Images/biplus_cover.jpg" alt="" />
+              </div>
+              <p class="card_title semi_bold">Biplus Consult</p>
+              <p class="project_desc">
+                A company championing data driven technologies and their
+                applications. A fully responsive website showcasing it’s
+                services.
+              </p>
+              <a
+                href="https://biplus.netlify.app/"
+                target="_blank"
+                class="project_link"
+                >View Project
+                <iconify-icon
+                  icon="famicons:chevron-forward"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+            </div>
+            <!-- end of card -->
+
+            <div class="project_card">
+              <div class="figma_img">
+                <img src="./Images/Figma/Pine Gardens.jpg" alt="" />
+              </div>
+              <p class="card_title semi_bold">Pine Gardens Figma Project</p>
+              <p class="project_desc">
+                An intricate UI desktop design of project Pine Gardens
+                showcasing it’s the plan of the project.
+              </p>
+              <a
+                href="https://www.figma.com/design/0fxoyuF6uHIuVRv5gT95Zk/Pine-Gardens?m=auto&t=2NomK4FwzK6VA31E-6"
+                target="_blank"
+                class="project_link"
+                >View Project
+                <iconify-icon
+                  icon="famicons:chevron-forward"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+            </div>
+            <!-- end of card -->
+          </div>
+          <!-- end of column -->
         </div>
+      </div>
     </section>
     <!-- ===portfolio end==== -->
 
     <!-- ===rates section=== -->
     <section class="section" id="rates">
-        <div class="container">
-            <div class="rateContent">
-                <div class="textContent">
-                    <p class="title">AFFORDABLE</p>
-                    <p class="subtitle semi_bold">Flexible Rates for Every Project</p>
+      <div class="container">
+        <div class="rateContent">
+          <div class="textContent">
+            <p class="title">AFFORDABLE</p>
+            <p class="subtitle semi_bold">Flexible Rates for Every Project</p>
 
-                    <p class="intro_textContent">
-                        I offer competitive rates tailored to your budget. Let's collaborate on your next project!
-                    </p>
+            <p class="intro_textContent">
+              I offer competitive rates tailored to your budget. Let's
+              collaborate on your next project!
+            </p>
 
-                    <div class="rateContent_Cards">
-                        <div class="contentCard">
-                            <iconify-icon icon="game-icons:team-idea" width="48" height="48"></iconify-icon>
-                            <p class="content_intro">Custom Solutions</p>
-                            <p>Ready to take on any project,  big or small.</p>
-                        </div>
+            <div class="rateContent_Cards">
+              <div class="contentCard">
+                <iconify-icon
+                  icon="game-icons:team-idea"
+                  width="48"
+                  height="48"
+                ></iconify-icon>
+                <p class="content_intro">Custom Solutions</p>
+                <p>Ready to take on any project, big or small.</p>
+              </div>
 
-                        <div class="contentCard">
-                            <iconify-icon icon="ion:rocket-sharp" width="48" height="48"></iconify-icon>
-                            <p class="content_intro">Get Started</p>
-                            <p>Contact me today to discuss your ideas and needs.</p>
-                        </div>
-                    </div>
-
-                    <a href="#contact" class="btn btn-primary">Contact Me <iconify-icon icon="famicons:chevron-forward"
-                            width="24" height="24"></iconify-icon></a>
-                </div>
-                <!-- end of text content -->
-
-                <div class="imgContent">
-                    <img src="./Images/deal_img.jpg" alt="Shaking Hands">
-                    <div class="absolute_text">
-                        <p>Get your website for as low as 80$</p>
-                    </div>
-                </div>
+              <div class="contentCard">
+                <iconify-icon
+                  icon="ion:rocket-sharp"
+                  width="48"
+                  height="48"
+                ></iconify-icon>
+                <p class="content_intro">Get Started</p>
+                <p>Contact me today to discuss your ideas and needs.</p>
+              </div>
             </div>
+
+            <a href="#contact" class="btn btn-primary"
+              >Contact Me
+              <iconify-icon
+                icon="famicons:chevron-forward"
+                width="24"
+                height="24"
+              ></iconify-icon
+            ></a>
+          </div>
+          <!-- end of text content -->
+
+          <div class="imgContent">
+            <img src="./Images/deal_img.jpg" alt="Shaking Hands" />
+            <div class="absolute_text">
+              <p>Get your website for as low as 80$</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- ===rates section end=== -->
 
     <!-- ===testimonials start=== -->
     <section class="section" id="testimony">
-        <div class="container">
-            <p class="title center">TESTIMONIALS</p>
-            <p class="subtitle semi_bold center">What others say!</p>
+      <div class="container">
+        <p class="title center">TESTIMONIALS</p>
+        <p class="subtitle semi_bold center">What others say!</p>
 
-            <div class="testimonySwiper">
-                <div class="swiper">
-                    <div class="mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="top_sec">
-                                    <div class="img_hero">
-                                        <img src="./Images/testimonials/team-2.jpg" alt="Client Image">
-                                        <div class="guest_title">
-                                            <h3>Client Name</h3>
-                                            <span>Client Title</span>
-                                        </div>
-                                    </div>
-
-                                    <iconify-icon icon="fa-solid:quote-right" width="48" height="48"></iconify-icon>
-                                </div>
-
-                                <div class="bottom_sec">
-                                    <p>
-                                        Minima recusandae, accusamus eligendi ullam iure, animi ipsam culpa est modi
-                                        amet magni labore a dolore! Repellendus eius explicabo dolores libero
-                                        consequatur.
-                                        Eligendi tempore amet accusantium soluta consequatur, quaerat tenetur,
-                                        perferendis eum repellendus ex incidunt. Doloribus
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- end of card -->
-
-                            <div class="swiper-slide">
-                                <div class="top_sec">
-                                    <div class="img_hero">
-                                        <img src="./Images/testimonials/team-1.jpg" alt="Client Image">
-                                        <div class="guest_title">
-                                            <h3>Client Name</h3>
-                                            <span>Client Title</span>
-                                        </div>
-                                    </div>
-
-                                    <iconify-icon icon="fa-solid:quote-right" width="48" height="48"></iconify-icon>
-                                </div>
-
-                                <div class="bottom_sec">
-                                    <p>
-                                        Minima recusandae, accusamus eligendi ullam iure, animi ipsam culpa est modi
-                                        amet magni labore a dolore! Repellendus eius explicabo dolores libero
-                                        consequatur.
-                                        Eligendi tempore amet accusantium soluta consequatur, quaerat tenetur,
-                                        perferendis eum repellendus ex incidunt. Doloribus
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- end of card -->
-
-
-                            <div class="swiper-slide">
-                                <div class="top_sec">
-                                    <div class="img_hero">
-                                        <img src="./Images/testimonials/team-4.jpg" alt="Client Image">
-                                        <div class="guest_title">
-                                            <h3>Client Name</h3>
-                                            <span>Client Title</span>
-                                        </div>
-                                    </div>
-
-                                    <iconify-icon icon="fa-solid:quote-right" width="48" height="48"></iconify-icon>
-                                </div>
-
-                                <div class="bottom_sec">
-                                    <p>
-                                        Minima recusandae, accusamus eligendi ullam iure, animi ipsam culpa est modi
-                                        amet magni labore a dolore! Repellendus eius explicabo dolores libero
-                                        consequatur.
-                                        Eligendi tempore amet accusantium soluta consequatur, quaerat tenetur,
-                                        perferendis eum repellendus ex incidunt. Doloribus
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- end of card -->
-
-                            <div class="swiper-slide">
-                                <div class="top_sec">
-                                    <div class="img_hero">
-                                        <img src="./Images/testimonials/team-3.jpg" alt="Client Image">
-                                        <div class="guest_title">
-                                            <h3>Client Name</h3>
-                                            <span>Client Title</span>
-                                        </div>
-                                    </div>
-
-                                    <iconify-icon icon="fa-solid:quote-right" width="48" height="48"></iconify-icon>
-                                </div>
-
-                                <div class="bottom_sec">
-                                    <p>
-                                        Minima recusandae, accusamus eligendi ullam iure, animi ipsam culpa est modi
-                                        amet magni labore a dolore! Repellendus eius explicabo dolores libero
-                                        consequatur.
-                                        Eligendi tempore amet accusantium soluta consequatur, quaerat tenetur,
-                                        perferendis eum repellendus ex incidunt. Doloribus
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- end of card -->
-
-                            <div class="swiper-slide">
-                                <div class="top_sec">
-                                    <div class="img_hero">
-                                        <img src="./Images/testimonials/team-5.jpg" alt="Client Image">
-                                        <div class="guest_title">
-                                            <h3>Client Name</h3>
-                                            <span>Client Title</span>
-                                        </div>
-                                    </div>
-
-                                    <iconify-icon icon="fa-solid:quote-right" width="48" height="48"></iconify-icon>
-                                </div>
-
-                                <div class="bottom_sec">
-                                    <p>
-                                        Minima recusandae, accusamus eligendi ullam iure, animi ipsam culpa est modi
-                                        amet magni labore a dolore! Repellendus eius explicabo dolores libero
-                                        consequatur.
-                                        Eligendi tempore amet accusantium soluta consequatur, quaerat tenetur,
-                                        perferendis eum repellendus ex incidunt. Doloribus
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- end of card -->
-
-                            <div class="swiper-slide">
-                                <div class="top_sec">
-                                    <div class="img_hero">
-                                        <img src="./Images/testimonials/team-6.jpg" alt="Client Image">
-                                        <div class="guest_title">
-                                            <h3>Client Name</h3>
-                                            <span>Client Title</span>
-                                        </div>
-                                    </div>
-
-                                    <iconify-icon icon="fa-solid:quote-right" width="48" height="48"></iconify-icon>
-                                </div>
-
-                                <div class="bottom_sec">
-                                    <p>
-                                        Minima recusandae, accusamus eligendi ullam iure, animi ipsam culpa est modi
-                                        amet magni labore a dolore! Repellendus eius explicabo dolores libero
-                                        consequatur.
-                                        Eligendi tempore amet accusantium soluta consequatur, quaerat tenetur,
-                                        perferendis eum repellendus ex incidunt. Doloribus
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- end of card -->
-                        </div>
-
-                        <div class="swiper-pagination"></div>
+        <div class="testimonySwiper">
+          <div class="swiper">
+            <div class="mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="top_sec">
+                    <div class="img_hero">
+                      <img
+                        src="./Images/testimonials/team-2.jpg"
+                        alt="Client Image"
+                      />
+                      <div class="guest_title">
+                        <h3>Odoch Peter Acellam</h3>
+                        <span>Network Engineer</span>
+                      </div>
                     </div>
+
+                    <iconify-icon
+                      icon="fa-solid:quote-right"
+                      width="48"
+                      height="48"
+                    ></iconify-icon>
+                  </div>
+
+                  <div class="bottom_sec">
+                    <p>
+                      Tim is not just a junior software developer; he's a coding
+                      maestro with a heart of gold. His source code is ike a
+                      symphony of innovation and creativity. Behind His
+                      hardworking facade lies genuine passion for all things
+                      tech. And Let's not forget his knack for injecting humor
+                      into every situation - his funny character is the chery on
+                      top of his coding brilliance. Proud to call him a friend!
+                    </p>
+                  </div>
                 </div>
+                <!-- end of card -->
+
+                <div class="swiper-slide">
+                  <div class="top_sec">
+                    <div class="img_hero">
+                      <img
+                        src="./Images/testimonials/team-1.jpg"
+                        alt="Client Image"
+                      />
+                      <div class="guest_title">
+                        <h3>Client Name</h3>
+                        <span>Client Title</span>
+                      </div>
+                    </div>
+
+                    <iconify-icon
+                      icon="fa-solid:quote-right"
+                      width="48"
+                      height="48"
+                    ></iconify-icon>
+                  </div>
+
+                  <div class="bottom_sec">
+                    <p>
+                      Minima recusandae, accusamus eligendi ullam iure, animi
+                      ipsam culpa est modi amet magni labore a dolore!
+                      Repellendus eius explicabo dolores libero consequatur.
+                      Eligendi tempore amet accusantium soluta consequatur,
+                      quaerat tenetur, perferendis eum repellendus ex incidunt.
+                      Doloribus
+                    </p>
+                  </div>
+                </div>
+                <!-- end of card -->
+
+                <div class="swiper-slide">
+                  <div class="top_sec">
+                    <div class="img_hero">
+                      <img
+                        src="./Images/testimonials/team-4.jpg"
+                        alt="Client Image"
+                      />
+                      <div class="guest_title">
+                        <h3>Client Name</h3>
+                        <span>Client Title</span>
+                      </div>
+                    </div>
+
+                    <iconify-icon
+                      icon="fa-solid:quote-right"
+                      width="48"
+                      height="48"
+                    ></iconify-icon>
+                  </div>
+
+                  <div class="bottom_sec">
+                    <p>
+                      Minima recusandae, accusamus eligendi ullam iure, animi
+                      ipsam culpa est modi amet magni labore a dolore!
+                      Repellendus eius explicabo dolores libero consequatur.
+                      Eligendi tempore amet accusantium soluta consequatur,
+                      quaerat tenetur, perferendis eum repellendus ex incidunt.
+                      Doloribus
+                    </p>
+                  </div>
+                </div>
+                <!-- end of card -->
+
+                <div class="swiper-slide">
+                  <div class="top_sec">
+                    <div class="img_hero">
+                      <img
+                        src="./Images/testimonials/team-3.jpg"
+                        alt="Client Image"
+                      />
+                      <div class="guest_title">
+                        <h3>Client Name</h3>
+                        <span>Client Title</span>
+                      </div>
+                    </div>
+
+                    <iconify-icon
+                      icon="fa-solid:quote-right"
+                      width="48"
+                      height="48"
+                    ></iconify-icon>
+                  </div>
+
+                  <div class="bottom_sec">
+                    <p>
+                      Minima recusandae, accusamus eligendi ullam iure, animi
+                      ipsam culpa est modi amet magni labore a dolore!
+                      Repellendus eius explicabo dolores libero consequatur.
+                      Eligendi tempore amet accusantium soluta consequatur,
+                      quaerat tenetur, perferendis eum repellendus ex incidunt.
+                      Doloribus
+                    </p>
+                  </div>
+                </div>
+                <!-- end of card -->
+              </div>
+
+              <div class="swiper-pagination"></div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- ===testimonials end=== -->
 
     <!-- ===contact me start=== -->
     <section class="section" id="contact">
-        <div class="container">
-            <div class="flex_contact">
-                <div class="textContact">
-                    <p class="title">CONTACT ME</p>
-                    <p class="subtitle semi_bold">Let s Bring Your Vision to Life!</p>
+      <div class="container">
+        <div class="flex_contact">
+          <div class="textContact">
+            <p class="title">CONTACT ME</p>
+            <p class="subtitle semi_bold">Let s Bring Your Vision to Life!</p>
 
-                    <p class="contact_intro">Contact me today to discuss your project and receive a personalized quote
-                        tailored to your needs.</p>
+            <p class="contact_intro">
+              Contact me today to discuss your project and receive a
+              personalized quote tailored to your needs.
+            </p>
 
-                    <div class="contact_icons">
-                        <div class="flex_icon">
-                            <div class="icon"><iconify-icon icon="gis:location-poi" width="48"
-                                    height="48"></iconify-icon></div>
-                            <div class="locale">
-                                <p>Location</p>
-                                <span>Lira City, Uganda</span>
-                            </div>
-                        </div>
-                        <!-- end flex icon -->
-
-                        <div class="flex_icon">
-                            <div class="icon"><iconify-icon icon="ic:sharp-phone" width="48" height="48"></iconify-icon>
-                            </div>
-                            <div class="locale">
-                                <p>Call Me</p>
-                                <a href="#">0783375451 / 0742504308</a>
-                            </div>
-                        </div>
-                        <!-- end flex icon -->
-
-                        <div class="flex_icon">
-                            <div class="icon"><iconify-icon icon="mdi:email-outline" width="48"
-                                    height="48"></iconify-icon></div>
-                            <div class="locale">
-                                <p>Email</p>
-                                <a href="mailto:anganyatimothy@gmail.com">anganyatimothy@gmail.com</a>
-                            </div>
-                        </div>
-                        <!-- end flex icon -->
-                    </div>
+            <div class="contact_icons">
+              <div class="flex_icon">
+                <div class="icon">
+                  <iconify-icon
+                    icon="gis:location-poi"
+                    width="48"
+                    height="48"
+                  ></iconify-icon>
                 </div>
+                <div class="locale">
+                  <p>Location</p>
+                  <span>Lira City, Uganda</span>
+                </div>
+              </div>
+              <!-- end flex icon -->
 
-                <form action="https://formspree.io/f/maneparp" method="POST">
-                    <div class="form_group">
-                        <input type="text" name="name" id="" placeholder="Enter Your Name" required>
-                        <input type="email" name="email" id="" placeholder="Enter Your Email" required>
-                    </div>
-                    <input type="text" name="subject" id="" placeholder="Subject" required>
-                    <textarea name="message" id="" rows="9" placeholder="Message" required></textarea>
+              <div class="flex_icon">
+                <div class="icon">
+                  <iconify-icon
+                    icon="ic:sharp-phone"
+                    width="48"
+                    height="48"
+                  ></iconify-icon>
+                </div>
+                <div class="locale">
+                  <p>Call Me</p>
+                  <a href="#">0783375451 / 0742504308</a>
+                </div>
+              </div>
+              <!-- end flex icon -->
 
-                    <button type="submit">Send Message <iconify-icon icon="famicons:chevron-forward" width="24"
-                            height="24"></iconify-icon></button>
-                </form>
+              <div class="flex_icon">
+                <div class="icon">
+                  <iconify-icon
+                    icon="mdi:email-outline"
+                    width="48"
+                    height="48"
+                  ></iconify-icon>
+                </div>
+                <div class="locale">
+                  <p>Email</p>
+                  <a href="mailto:anganyatimothy@gmail.com"
+                    >anganyatimothy@gmail.com</a
+                  >
+                </div>
+              </div>
+              <!-- end flex icon -->
             </div>
+          </div>
+
+          <form action="https://formspree.io/f/maneparp" method="POST">
+            <div class="form_group">
+              <input
+                type="text"
+                name="name"
+                id=""
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+            <input
+              type="text"
+              name="subject"
+              id=""
+              placeholder="Subject"
+              required
+            />
+            <textarea
+              name="message"
+              id=""
+              rows="9"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <button type="submit">
+              Send Message
+              <iconify-icon
+                icon="famicons:chevron-forward"
+                width="24"
+                height="24"
+              ></iconify-icon>
+            </button>
+          </form>
         </div>
+      </div>
     </section>
     <!-- ===contact me end -->
 
     <!-- ===FOOTER START=== -->
     <footer>
-        <div class="container">
-            <div class="section">
-                <div class="footer_cols">
-                    <div class="logo"><img src="./Images/logo.png" alt="Logo"></div>
-                </div>
-                <!-- end of col -->
+      <div class="container">
+        <div class="section">
+          <div class="footer_cols">
+            <div class="logo"><img src="./Images/logo.png" alt="Logo" /></div>
+          </div>
+          <!-- end of col -->
 
-                <div class="footer_cols">
-                    <p class="footer_head">Quick Links</p>
-                    <div class="footer_linx">
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#services">Services</a>
-                        <a href="#projects">Portfolio</a>
-                        <a href="#testimony">Testimonials</a>
-                        <a href="#contact">Contact Me</a>
-                    </div>
-                </div>
-                <!-- end of col -->
-
-                <div class="footer_cols">
-                    <p class="footer_head">Stay Connected</p>
-                    <div class="footer_linx">
-                        <a href="#">Facebook</a>
-                        <a href="#">Twitter / X</a>
-                        <a href="#">LinkedIn</a>
-                        <a href="#">WhatsApp</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </div>
-                <!-- end of col -->
-
-                <div class="footer_cols">
-                    <p class="footer_head">Have a Project in Mind?</p>
-                    <h1>LET'S  WORK</h1>
-                    <a href="#" class="longbtn">Contact Me <iconify-icon icon="famicons:chevron-forward" width="24"
-                            height="24"></iconify-icon></a>
-                </div>
+          <div class="footer_cols">
+            <p class="footer_head">Quick Links</p>
+            <div class="footer_linx">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#projects">Portfolio</a>
+              <a href="#testimony">Testimonials</a>
+              <a href="#contact">Contact Me</a>
             </div>
+          </div>
+          <!-- end of col -->
 
-            <hr>
-
-            <div class="copyryt">
-                <p>&copy; 2025 Anganya Timothy. All Rights reserved. </p>
-
-                <div class="copyryt_icons">
-                    <a href="#"><iconify-icon icon="ic:baseline-facebook" width="30" height="30"></iconify-icon></a>
-                    <a href="#"><iconify-icon icon="ri:twitter-x-fill" width="30" height="30"></iconify-icon></a>
-                    <a href="#"><iconify-icon icon="mdi:linkedin" width="30" height="30"></iconify-icon></a>
-                    <a href="#"><iconify-icon icon="mdi:github" width="30" height="30"></iconify-icon></a>
-                    <a href="#"><iconify-icon icon="mingcute:whatsapp-fill" width="30" height="30"></iconify-icon></a>
-                </div>
+          <div class="footer_cols">
+            <p class="footer_head">Stay Connected</p>
+            <div class="footer_linx">
+              <a
+                href="https://www.facebook.com/profile.php?id=100075832546427"
+                target="_blank"
+                >Facebook</a
+              >
+              <a href="https://twitter.com/anganya1738" target="_blank"
+                >Twitter / X</a
+              >
+              <a
+                href="https://www.linkedin.com/in/anganya-timothy-70bb85236/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a href="https://wa.me/256783375451" target="_blank">WhatsApp</a>
+              <a href="https://github.com/Timothy1738" target="_blank"
+                >GitHub</a
+              >
             </div>
+          </div>
+          <!-- end of col -->
+
+          <div class="footer_cols">
+            <p class="footer_head">Have a Project in Mind?</p>
+            <h1>LET'S WORK</h1>
+            <a href="mailto:anganyatimothy@gmail.com" class="longbtn"
+              >Contact Me
+              <iconify-icon
+                icon="famicons:chevron-forward"
+                width="24"
+                height="24"
+              ></iconify-icon
+            ></a>
+          </div>
         </div>
+
+        <hr />
+
+        <div class="copyryt">
+          <p>&copy; 2026 Anganya Timothy. All Rights reserved.</p>
+
+          <div class="copyryt_icons">
+            <a
+              href="https://www.facebook.com/profile.php?id=100075832546427"
+              target="_blank"
+              ><iconify-icon
+                icon="ic:baseline-facebook"
+                width="30"
+                height="30"
+              ></iconify-icon
+            ></a>
+            <a href="https://twitter.com/anganya1738" target="_blank"
+              ><iconify-icon
+                icon="ri:twitter-x-fill"
+                width="30"
+                height="30"
+              ></iconify-icon
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/anganya-timothy-70bb85236/"
+              target="_blank"
+              ><iconify-icon
+                icon="mdi:linkedin"
+                width="30"
+                height="30"
+              ></iconify-icon
+            ></a>
+            <a href="https://github.com/Timothy1738" target="_blank"
+              ><iconify-icon
+                icon="mdi:github"
+                width="30"
+                height="30"
+              ></iconify-icon
+            ></a>
+            <a href="https://wa.me/256783375451" target="_blank"
+              ><iconify-icon
+                icon="mingcute:whatsapp-fill"
+                width="30"
+                height="30"
+              ></iconify-icon
+            ></a>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- ===FOOTER END=== -->
 
     <!-- SCROLL TO TOP -->
-    <button class="scroll-to-top"><iconify-icon class="iconify" icon="uiw:up" width="32"
-            height="32"></iconify-icon></button>
+    <button class="scroll-to-top">
+      <iconify-icon
+        class="iconify"
+        icon="uiw:up"
+        width="32"
+        height="32"
+      ></iconify-icon>
+    </button>
 
     <!-- ICONIFY ICONS -->
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
@@ -922,21 +1324,21 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            speed: 1000, // Adjust speed (500ms = 0.5 seconds)
-            grabCursor: true,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        speed: 1000, // Adjust speed (500ms = 0.5 seconds)
+        grabCursor: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
 
     <!-- LightGallery JS -->
@@ -946,17 +1348,15 @@
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/rotate/lg-rotate.min.js"></script>
 
     <script>
-        // Initialize LightGallery
-        lightGallery(document.getElementById('lightgallery'), {
-            selector: 'a', // Activates LightGallery for links
-            plugins: [lgZoom, lgShare, lgRotate], // Include the plugins you need
-            download: true, // Enable download button
-            share: true, // Enable sharing
-            rotate: true, // Enable rotation controls
-            zoom: true, // Enable zooming
-        });
+      // Initialize LightGallery
+      lightGallery(document.getElementById("lightgallery"), {
+        selector: "a", // Activates LightGallery for links
+        plugins: [lgZoom, lgShare, lgRotate], // Include the plugins you need
+        download: true, // Enable download button
+        share: true, // Enable sharing
+        rotate: true, // Enable rotation controls
+        zoom: true, // Enable zooming
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
